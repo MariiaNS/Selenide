@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class appOrderPositiveTest {
+class AppOrderPositiveTest {
     private WebDriver driver;
 
     @BeforeAll
@@ -46,9 +46,6 @@ class appOrderPositiveTest {
         driver.findElement(By.cssSelector("button.button")).click();
         var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
-
-
-
 
 
     }
